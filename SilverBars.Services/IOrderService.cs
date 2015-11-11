@@ -7,5 +7,6 @@ namespace SilverBars.Services
         List<Order> Orders { get; set; }
         void RegisterOrder(Order order);
         void CancelRegistration(Order order);
+        IEnumerable<Order> SummariseOrders();
     }
 }
