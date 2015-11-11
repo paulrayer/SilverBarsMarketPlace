@@ -28,10 +28,17 @@ namespace SilverBars.Services
 
         public IEnumerable<Order> SummariseOrders()
         {
-            return Orders.GroupBy(o => new { o.OrderType, o.Price })
+            var sellOrders = Orders.GroupBy(o => new { o.OrderType, o.Price })
+                 .Select(cl => new Order { Quantity = cl.Sum(c => c.Quantity), Price = cl.Key.Price, OrderType = cl.Key.OrderType })
+                 .OrderBy(o => o.Price)
+                 .Where(o => o.OrderType == "SELL");
+
+            var buyOrders = Orders.GroupBy(o => new { o.OrderType, o.Price })
                 .Select(cl => new Order { Quantity = cl.Sum(c => c.Quantity), Price = cl.Key.Price, OrderType = cl.Key.OrderType })
-                .OrderBy(o => o.OrderType)
-                .ThenBy(o => o.Price);
+                .OrderByDescending(o => o.Price)
+                .Where(o => o.OrderType == "BUY");
+
+            return sellOrders.Union(buyOrders);
         }
     }
 }
