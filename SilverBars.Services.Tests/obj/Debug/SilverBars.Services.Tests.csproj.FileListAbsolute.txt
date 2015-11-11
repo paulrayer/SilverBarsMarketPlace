@@ -1,0 +1,7 @@
+C:\Paul\InterviewProjects\SilverBarsMarketPlace\SilverBars.Services.Tests\bin\Debug\SilverBars.Services.Tests.dll
+C:\Paul\InterviewProjects\SilverBarsMarketPlace\SilverBars.Services.Tests\bin\Debug\SilverBars.Services.Tests.pdb
+C:\Paul\InterviewProjects\SilverBarsMarketPlace\SilverBars.Services.Tests\bin\Debug\nunit.framework.dll
+C:\Paul\InterviewProjects\SilverBarsMarketPlace\SilverBars.Services.Tests\bin\Debug\nunit.framework.xml
+C:\Paul\InterviewProjects\SilverBarsMarketPlace\SilverBars.Services.Tests\obj\Debug\SilverBars.Services.Tests.csprojResolveAssemblyReference.cache
+C:\Paul\InterviewProjects\SilverBarsMarketPlace\SilverBars.Services.Tests\obj\Debug\SilverBars.Services.Tests.dll
+C:\Paul\InterviewProjects\SilverBarsMarketPlace\SilverBars.Services.Tests\obj\Debug\SilverBars.Services.Tests.pdb
