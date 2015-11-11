@@ -39,6 +39,15 @@ namespace SilverBars.Services.Tests
             Assert.AreEqual(5.5d, summarisedOrders.First(s => s.Price.Equals(306d) && s.OrderType == "SELL").Quantity);
         }
 
+        [Test]
+        public void SummariseOrderShouldSortSellOrdersInAscendingOrder()
+        {
+            RegisterMultipleOrdersFewWithSamePrice();
+            var summarisedOrders = _orderService.SummariseOrders().ToList();
+            Assert.AreEqual(306d, summarisedOrders.First(s => s.OrderType == "SELL").Price);
+            Assert.AreEqual(310d, summarisedOrders.Last(s => s.OrderType == "SELL").Price);
+        }
+
         private Order GetADummyOrder()
         {
             return new Order { UserId = "user1", Quantity = 1, Price = 303, OrderType = "SELL" };
