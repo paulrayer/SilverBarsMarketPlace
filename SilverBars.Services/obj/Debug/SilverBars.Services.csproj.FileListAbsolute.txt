@@ -1,0 +1,4 @@
+C:\Paul\InterviewProjects\SilverBarsMarketPlace\SilverBars.Services\bin\Debug\SilverBars.Services.dll
+C:\Paul\InterviewProjects\SilverBarsMarketPlace\SilverBars.Services\bin\Debug\SilverBars.Services.pdb
+C:\Paul\InterviewProjects\SilverBarsMarketPlace\SilverBars.Services\obj\Debug\SilverBars.Services.dll
+C:\Paul\InterviewProjects\SilverBarsMarketPlace\SilverBars.Services\obj\Debug\SilverBars.Services.pdb
