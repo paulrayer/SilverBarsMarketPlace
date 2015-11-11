@@ -16,5 +16,13 @@ namespace SilverBars.Services
         {
             Orders.Add(order);
         }
+
+        public void CancelRegistration(Order order)
+        {
+            Orders.RemoveAll(
+                r =>
+                    r.UserId == order.UserId && r.OrderType == order.OrderType && r.Quantity == order.Quantity &&
+                    r.Price == order.Price);
+        }
     }
 }
